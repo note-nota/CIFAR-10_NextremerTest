@@ -1,14 +1,12 @@
 import tensorflow as tf
 
-from tensorflow.keras.datasets import cifar10
-from keras.utils import to_categorical
-
 import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-(x_train,y_train),(x_test,y_test) = cifar10.load_data()
-y_train,y_test = to_categorical(y_train,10),to_categorical(y_test,10)
+import dataset_cifar10
+
+(x_train,y_train),(x_test,y_test) = dataset_cifar10.get_data()
 
 print('x_train.shape', x_train.shape)
 print('y_train.shape', y_train.shape)
