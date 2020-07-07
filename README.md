@@ -70,3 +70,7 @@ $ mlflow ui
 ```
 
 MLFlow Server (default: http://127.0.0.1:5000) が立つ。これまでのモデル及び結果の比較検討を行う。
+
+## References
+* [[Doc] tensorflow](https://www.tensorflow.org/install)
+* [[Doc] MLFlow](https://mlflow.org/docs/latest/index.html)
