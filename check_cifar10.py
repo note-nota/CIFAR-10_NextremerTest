@@ -10,6 +10,8 @@ import dataset_cifar10
 
 print('x_train.shape', x_train.shape)
 print('y_train.shape', y_train.shape)
+print('x_test.shape', x_test.shape)
+print('y_test.shape', y_test.shape)
 
 LABELS = ('airplane', 'mobile', 'bird', 'cat', 'deer',
           'dog', 'frog', 'horse','ship', 'truck')

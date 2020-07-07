@@ -1,5 +1,5 @@
 from tensorflow.keras.datasets import cifar10
-from keras.utils import to_categorical
+from tensorflow.keras.utils import to_categorical
 
 def get_data():
     (x_train,y_train),(x_test,y_test) = cifar10.load_data()
