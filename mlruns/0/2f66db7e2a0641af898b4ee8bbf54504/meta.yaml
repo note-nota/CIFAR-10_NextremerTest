@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/naoki/Documents/Sandpit/Python/CIFAR-10_NextremerTest/mlruns/0/2f66db7e2a0641af898b4ee8bbf54504/artifacts
+end_time: 1594042795423
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 2f66db7e2a0641af898b4ee8bbf54504
+run_uuid: 2f66db7e2a0641af898b4ee8bbf54504
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1594042288381
+status: 3
+tags: []
+user_id: naoki
