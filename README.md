@@ -4,10 +4,20 @@
 * MacBook Pro (13-inch, 2018)
   - 2.7 GHz クアッドコアIntel Core i7
   - メモリ 16 GB
-* Python 3.7.6
-* pip 20.1.1
-* tensorflow 2.2.0
-* mlflow 1.9.1
+  - Python 3.7.6
+  - pip 20.1.1
+  - tensorflow 2.2.0
+  - mlflow 1.9.1
+  - keras 2.4.3
+* Ubuntu 18.04 LTS
+  - 4.2 GHz x 8 Intel Core i7
+  - GeForce GTX 1070
+  - メモリ 16 GB
+  - Python 3.6.9
+  - pip 20.1.1
+  - tensorflow 2.2.0
+  - mlflow 1.9.1
+  - keras 2.4.3
 
 ## Dataset
 * [The CIFAR-10 dataset](https://www.cs.toronto.edu/%7Ekriz/cifar.html)
@@ -34,17 +44,29 @@
   - ML Model の定義
 * train_cifar10.py
   - 学習
-  - checkpoints:学習済みモデル出力
+  - checkpoints/:学習済みモデル出力先
 * test_cifar10.py
   - 学習済みモデルによるテスト
 * mlruns/
   - Tracking 用ファイル群
+* checkpoints/
+  - 学習済みモデルの格納フォルダ
+  - ここでは、精度を問わないので学習の最終結果のみを保存
+
 
 ## Requirement
 * python
 * tensorflow
+* keras
 * mlflow
 *
+
+## Check
+```
+$ python3 check_cifar10.py
+```
+
+画像ファイル (cifar10_image_train.png) の出力を行う。Train の画像データとラベルの確認用。
 
 ## Train
 ```
@@ -55,7 +77,7 @@ $ python3 train_cifar10.py
 --batch_size=32 (default:16)
 ```
 
-学習後、Train と Validation による Loss と Accuracy のそれぞれのプロットを画面出力する。学習済みモデルとして `checkpoints` 配下にモデルの保存する。また、パラメータ及びエポックごとのメトリックス、モデルデータなどは MLFlow Tracking にて `mlruns` 配下に保存している。
+学習後、Train と Validation による Loss と Accuracy のそれぞれのプロットを画面出力する。学習済みモデルとして `checkpoints` 配下にモデルの保存する。また、パラメータ及びエポックごとのメトリックス、モデルデータなどは MLFlow Tracking にて `mlruns/1/` 配下に保存している。
 
 ## Test
 ```
@@ -70,6 +92,8 @@ $ mlflow ui
 ```
 
 MLFlow Server (default: http://127.0.0.1:5000) が立つ。これまでのモデル及び結果の比較検討を行う。
+
+動作確認段階で Experiments/test/ 配下に実験結果を格納している。
 
 ## References
 * [[Doc] tensorflow](https://www.tensorflow.org/install)

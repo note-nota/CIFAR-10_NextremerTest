@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/1/2ea3fdfa2df14949a728aa98675ed249/artifacts
+end_time: 1594263110854
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 2ea3fdfa2df14949a728aa98675ed249
+run_uuid: 2ea3fdfa2df14949a728aa98675ed249
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1594258405407
+status: 3
+tags: []
+user_id: naoki

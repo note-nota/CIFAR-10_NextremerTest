@@ -3,11 +3,13 @@ import argparse
 import numpy as np
 import tensorflow as tf
 import mlflow.keras
+import mlflow
 import matplotlib.pyplot as plt
 
 import model_cifar10
 import dataset_cifar10
 
+mlflow.set_experiment("test")
 mlflow.keras.autolog()
 
 parser = argparse.ArgumentParser()

@@ -1,0 +1,5 @@
+One-Hot Data の平滑化を行う
+
+```dataset_cifar10.py
+np.where(y_train < 0.5, 0.02, 0.82)
+```
