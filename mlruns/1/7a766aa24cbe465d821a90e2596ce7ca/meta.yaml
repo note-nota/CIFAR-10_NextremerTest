@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/1/7a766aa24cbe465d821a90e2596ce7ca/artifacts
+end_time: 1594198247519
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 7a766aa24cbe465d821a90e2596ce7ca
+run_uuid: 7a766aa24cbe465d821a90e2596ce7ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1594197802843
+status: 3
+tags: []
+user_id: nota
